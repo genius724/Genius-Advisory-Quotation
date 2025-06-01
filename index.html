@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genius Advisory - Quotation</title>
-  <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genius Advisory Quotation</title>
+<style>
   body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -43,77 +43,163 @@
 </style>
 </head>
 <body>
+  <img src="logo.webp" alt="Genius Advisory Logo" class="logo" />
+  <h1>Genius Advisory</h1>
+  <h2>Quotation for Digital Marketing Services</h2>
 
-  <header>
-    <img src="logo.webp" alt="Genius Advisory Logo">
-  </header>
+  <p><strong>Quotation Details:</strong></p>
+  <ul>
+    <li>This quotation outlines the digital marketing services offered by Genius Advisory.</li>
+    <li>Each service includes a detailed description of its scope and expected deliverables.</li>
+    <li>Pricing is divided into two categories:
+      <ul>
+        <li><strong>Silver</strong> – Minimum level of service</li>
+        <li><strong>Platinum</strong> – Maximum value-added service</li>
+      </ul>
+    </li>
+    <li>Clients may select the services they are interested in; the total estimated cost is calculated automatically.</li>
+    <li>Final pricing and scope will be confirmed after consultation based on specific requirements.</li>
+  </ul>
 
-  <div class="quotation-box">
-    <h1>Quotation for Digital Marketing Services</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Select</th>
-          <th>Service</th>
-          <th>Price (USD)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="checkbox" class="service" data-price="500"></td>
-          <td>Social Media Management</td>
-          <td>$500</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="service" data-price="800"></td>
-          <td>Search Engine Optimization (SEO)</td>
-          <td>$800</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="service" data-price="400"></td>
-          <td>Email Marketing Campaign</td>
-          <td>$400</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="service" data-price="1000"></td>
-          <td>Pay-Per-Click Advertising</td>
-          <td>$1000</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="service" data-price="600"></td>
-          <td>Website Analytics and Reporting</td>
-          <td>$600</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr class="total-row">
-          <td colspan="2">Total</td>
-          <td id="total-price">$0</td>
-        </tr>
-      </tfoot>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th>✔</th>
+        <th>SN</th>
+        <th>Service</th>
+        <th>Description</th>
+        <th>Silver (Rs.)</th>
+        <th>Platinum (Rs.)</th>
+        <th>Remark</th>
+      </tr>
+    </thead>
+    <tbody id="service-table">
+      <tr>
+        <td><input type="checkbox" data-min="10000" data-max="10000"></td>
+        <td>1</td>
+        <td>Social Media Management</td>
+        <td>Maintaining and improving your brand’s online presence across platforms through strategic planning, content calendars, and engagement.</td>
+        <td>10000</td>
+        <td>10000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="0" data-max="0"></td>
+        <td>2</td>
+        <td>Advertising (Ads)</td>
+        <td>Managing paid campaigns on platforms like Facebook, Google, and Instagram with data-driven targeting to maximize ROI.</td>
+        <td><data-min="10%of$" data-max="10%of$"></td>
+        <td>–</td>
+        <td>Dynamic – based on spend</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="20000" data-max="25000"></td>
+        <td>3</td>
+        <td>Customer Relationship Management (CRM)</td>
+        <td>Implementing systems and strategies for effective communication, lead management, and customer loyalty building.</td>
+        <td>20000</td>
+        <td>25000</td>
+        <td>10am-5pm (Silver), 8am-8pm (Platinum)</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="15000" data-max="20000"></td>
+        <td>4</td>
+        <td>Video Shoot</td>
+        <td>Creating professional video content to promote products or services, build credibility, and improve brand storytelling.</td>
+        <td>15000</td>
+        <td>20000</td>
+        <td>1–2 times/month</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="10000" data-max="15000"></td>
+        <td>5</td>
+        <td>Photography</td>
+        <td>Capturing professional-grade photos for promotional use, including events, products, or business activities.</td>
+        <td>10000</td>
+        <td>15000</td>
+        <td>1–2 times/month</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="8000" data-max="12000"></td>
+        <td>6</td>
+        <td>Reels (8–12)</td>
+        <td>Editing short-form videos from raw footage to create highly engaging content for social media platforms.</td>
+        <td>8000</td>
+        <td>12000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="2500" data-max="3500"></td>
+        <td>7</td>
+        <td>Posts (4–6)</td>
+        <td>Designing and polishing images to align with branding and convey messages effectively through visual content.</td>
+        <td>2500</td>
+        <td>3500</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="2500" data-max="3500"></td>
+        <td>8</td>
+        <td>Graphic Design (4–6)</td>
+        <td>Designing banners, flyers, and digital creatives to visually communicate promotional or informative content.</td>
+        <td>2500</td>
+        <td>3500</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="2000" data-max="4000"></td>
+        <td>9</td>
+        <td>Motion Graphics (1–2)</td>
+        <td>Creating animations and visual effects to enhance storytelling, brand impact, and engagement.</td>
+        <td>2000</td>
+        <td>4000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="30000" data-max="40000"></td>
+        <td>10</td>
+        <td>SEO Optimization</td>
+        <td>Improving your website’s search engine ranking through keyword research, on-page SEO, and backlink strategies.</td>
+        <td>30000</td>
+        <td>40000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" data-min="5000" data-max="5000"></td>
+        <td>11</td>
+        <td>Consultation</td>
+        <td>One-on-one strategic advisory session to assess digital opportunities and roadmap planning.</td>
+        <td>5000</td>
+        <td>5000</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-    <button class="btn" onclick="generateQuote()">Generate Quotation</button>
+  <div class="total-box">
+    <p><strong>Total (Silver): Rs.<span id="total-min">0</span></strong></p>
+    <p><strong>Total (Platinum): Rs.<span id="total-max">0</span></strong></p>
+    <p><em>Note: This quotation may vary based on final requirements.</em></p>
   </div>
 
   <script>
-    const checkboxes = document.querySelectorAll('.service');
-    const totalPriceEl = document.getElementById('total-price');
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const totalMin = document.getElementById('total-min');
+    const totalMax = document.getElementById('total-max');
 
-    checkboxes.forEach(cb => {
-      cb.addEventListener('change', () => {
-        let total = 0;
-        checkboxes.forEach(c => {
-          if (c.checked) total += parseFloat(c.dataset.price);
-        });
-        totalPriceEl.textContent = `$${total}`;
+    function updateTotals() {
+      let min = 0, max = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          min += parseInt(cb.dataset.min) || 0;
+          max += parseInt(cb.dataset.max) || 0;
+        }
       });
-    });
-
-    function generateQuote() {
-      alert("Quotation generated with total: " + totalPriceEl.textContent);
+      totalMin.textContent = min.toLocaleString();
+      totalMax.textContent = max.toLocaleString();
     }
-  </script>
 
+    checkboxes.forEach(cb => cb.addEventListener('change', updateTotals));
+  </script>
 </body>
 </html>
