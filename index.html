@@ -220,31 +220,34 @@ Through website SEO, we ensure your digital and visual identity stands out and r
       > Technical SEO    (Platinum)
     </div>
 
-    <form id="quotationForm">
-      <h2>📊 Quotation Table – Services & Tiers</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>SN</th>
-            <th>Service</th>
-            <th>Silver</th>
-            <th>Gold</th>
-            <th>Platinum</th>
-            <th>Select</th>
-          </tr>
-        </thead>
-        <tbody id="quotationTableBody"></tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2">Total</td>
-            <td id="silverTotal">0</td>
-            <td id="goldTotal">0</td>
-            <td id="platinumTotal">0</td>
-            <td></td>
-          </tr>
-        </tfoot>
-      </table>
-    </form>
+   <form id="quotationForm">
+  <h2>📊 Quotation Table – Services & Tiers</h2>
+  <div class="table-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>SN</th>
+          <th>Service</th>
+          <th>Silver</th>
+          <th>Gold</th>
+          <th>Platinum</th>
+          <th>Select</th>
+        </tr>
+      </thead>
+      <tbody id="quotationTableBody"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td id="silverTotal">0</td>
+          <td id="goldTotal">0</td>
+          <td id="platinumTotal">0</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</form>
+
 
     <div class="section">
 <h3>📌 Terms & Conditions</h3>
@@ -336,7 +339,16 @@ We’re excited to grow together. Let's make something incredible!
       document.getElementById('silverTotal').textContent = silver;
       document.getElementById('goldTotal').textContent = gold;
       document.getElementById('platinumTotal').textContent = platinum;
-    }
+    } .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive table {
+  min-width: 700px;
+}
+
 
       document.addEventListener("DOMContentLoaded", renderTable);
   </script>
